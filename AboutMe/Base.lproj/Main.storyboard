@@ -42,20 +42,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcS-32-P99">
+                                <rect key="frame" x="105.5" y="818" width="203" height="44"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Introduce Yourself"/>
+                                <connections>
+                                    <action selector="introduceYourselfButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s8a-JZ-Ycn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="U25-Ma-eZt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Zi-70-lcK"/>
                             <constraint firstItem="i6a-hJ-WN9" firstAttribute="centerY" secondItem="U25-Ma-eZt" secondAttribute="centerY" id="5sC-4a-4hh"/>
                             <constraint firstItem="9aD-uv-1MD" firstAttribute="top" secondItem="i6a-hJ-WN9" secondAttribute="bottom" id="FXc-9B-wRE"/>
+                            <constraint firstItem="EcS-32-P99" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="IQm-r6-K9V"/>
                             <constraint firstItem="i6a-hJ-WN9" firstAttribute="leading" secondItem="U25-Ma-eZt" secondAttribute="trailing" constant="8" id="UHl-Ft-unN"/>
                             <constraint firstItem="U25-Ma-eZt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="c4b-4S-5vx"/>
                             <constraint firstItem="6xO-J7-8Ex" firstAttribute="leading" secondItem="9aD-uv-1MD" secondAttribute="trailing" constant="8" id="g0q-Hk-aT8"/>
                             <constraint firstItem="6xO-J7-8Ex" firstAttribute="centerY" secondItem="9aD-uv-1MD" secondAttribute="centerY" id="gFU-pv-Dah"/>
+                            <constraint firstItem="EcS-32-P99" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mYj-bU-ml4"/>
                             <constraint firstItem="9aD-uv-1MD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oJL-C1-IH5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hobbiesLabel" destination="6xO-J7-8Ex" id="rX3-So-T8Z"/>
+                        <outlet property="nameLabel" destination="i6a-hJ-WN9" id="J9U-7z-THP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
